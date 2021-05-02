@@ -22,6 +22,13 @@ body{
     text-decoration: none;
     display: inline-block;
 }
+#nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkred;
+}
         
 li {
     float: left;
@@ -47,21 +54,3 @@ li a:hover:not(.active) {
 .active {
             background-color: #4CAF50;
 }  
-.container{
-    display: flex;
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: darkred;
-
-}
-.container > li{
-    flex: 1;
-}
-@media all and (max-width: 400px) {
-    .container > li{
-        flex-basis: 100%;
-    }
-}
