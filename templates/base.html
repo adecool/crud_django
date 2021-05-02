@@ -12,14 +12,14 @@
 <body>
     <ul id="nav">
         {%if not user.is_authenticated %}
-            <li><a href="{% url 'home' %}">Django blog</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
             <li><a href="{% url 'login' %}">+ New Blog Post</a></li>
             <ul style="float:right;list-style-type:none;">
                 <li><a href="{% url 'signup' %}">Sign Up</a></li>
                 <li><a href="{% url 'login' %}">Login</a></li>
             </ul>
         {%else%}
-            <li><a href="{% url 'home' %}">Django blog</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
             <li><a href="{% url 'post_new' %}">+ New Blog Post</a></li>
             <ul style="float:right;list-style-type:none;">
                 <li><a href="{% url 'logout' %}">Log out</a></li>
